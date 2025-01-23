@@ -50,3 +50,37 @@ band2.clear()
 print(band2)
 
 del band2
+
+# Copy Dictionaries
+
+band2 = band.copy()
+band2["drums"] = "Aditya"
+print("Good Copy!")
+print(band)
+print(band2)
+
+# Copy using dict() constructor function
+
+band3 = dict(band2)
+print("Good Copy!")
+print(band3)
+
+# Nested Dictionaries
+
+member1 = {
+    "name": "Plant",
+    "instrument": "Guitar"
+}
+
+member2 = {
+    "name": "Page",
+    "instrument": "Vocals"
+}
+
+band = {
+    "member1": member1,
+    "member2": member2
+}
+
+print(band)
+print(band["member1"]["name"])
